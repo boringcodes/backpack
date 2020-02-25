@@ -11,13 +11,16 @@
     <img src="https://img.shields.io/david/boringcodes/backpack?style=flat-square">
   </a>
   <a href="https://www.npmjs.com/package/@boringcodes/backpack" aria-label="NPM Version">
-    <img src="https://img.shields.io/npm/v/@boringcodes/backpack?style=flat-square">
+    <img src="https://img.shields.io/npm/v/@boringcodes/backpack?color=brightgreen&style=flat-square">
   </a>
   <a href="https://www.npmjs.com/package/@boringcodes/backpack" aria-label="NPM Downloads">
     <img src="https://img.shields.io/npm/dm/@boringcodes/backpack?style=flat-square">
   </a>
   <a href="https://github.com/boringcodes/backpack/blob/master/LICENSE" aria-label="License">
-    <img src="https://img.shields.io/github/license/boringcodes/backpack?style=flat-square">
+    <img src="https://img.shields.io/github/license/boringcodes/backpack?color=brightgreen&style=flat-square">
+  </a>
+  <a href="https://github.com/boringcodes">
+    <img src="https://img.shields.io/badge/github-@boringcodes-brightgreen?style=flat-square">
   </a>
 </div>
 

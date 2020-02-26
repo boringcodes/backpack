@@ -32,7 +32,15 @@
 
 ## How to use
 
-Install it:
+Either through cloning with git or by using [yarn](https://yarnpkg.com/) (the recommended way):
+
+```bash
+yarn global add @boringcodes/backpack
+```
+
+And backpack will be installed globally to your system path.
+
+You can also install backpack as a repository dependency:
 
 ```bash
 yarn add @boringcodes/backpack

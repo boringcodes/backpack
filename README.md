@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
   </a>
   <a href="https://github.com/boringcodes/backpack" aria-label="GitHub Workflow Status">
-    <img src="https://img.shields.io/github/workflow/status/boringcodes/backpack/Publish Package to NPM?style=flat-square">
+    <img src="https://img.shields.io/github/workflow/status/boringcodes/backpack/publish-npm?style=flat-square">
   </a>
   <a href="https://github.com/boringcodes/backpack" aria-label="Dependencies Status">
     <img src="https://img.shields.io/david/boringcodes/backpack?style=flat-square">

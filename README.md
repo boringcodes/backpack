@@ -29,3 +29,83 @@
 - Typescript by default instead of Babel
 - Linting with tslint, tslint-config-airbnb, tslint-immutable & tslint-sonarts
 - Dotenv with dotenv-webpack
+
+## How to use
+
+Install it:
+
+```bash
+yarn add @boringcodes/backpack
+```
+
+and add a script to your package.json like this:
+
+```json
+{
+  "scripts": {
+    "dev": "backpack"
+  }
+}
+```
+
+After that there are just a few ~~conventions~~ defaults:
+
+* `src/index.ts`: the entry of your app.
+
+...actually that's it.
+
+You can then run your application in development mode:
+
+```bash
+yarn run dev
+```
+
+### Custom configuration
+
+For custom advanced behavior, you can create a `backpack.config.js` in the root of your project's directory (next to `package.json`).
+
+```js
+// backpack.config.js
+// IMPORTANT: This file is not going through babel transformation.
+// You can however use the ES2015 features supported by your Node.js version.
+module.exports = {
+  /* config options here */
+};
+```
+
+### Customizing webpack config
+
+[Example](https://github.com/palmerhq/backpack/tree/master/examples/with-custom-webpack-config)
+
+To extend webpack, you can define a function that extends its config via `backpack.config.js`.
+
+```js
+// backpack.config.js
+module.exports = {
+  webpack: (config, options, webpack) => {
+    // Perform customizations to config
+    // Important: return the modified config
+    return config;
+  },
+};
+```
+
+### Building for Production
+
+Add a npm script for the build step:
+
+```json
+{
+  "scripts": {
+    "dev": "backpack",
+    "build": "backpack build"
+  }
+}
+```
+
+Then run the build command and start your app
+
+```bash
+yarn run build
+node ./build/index.js
+```

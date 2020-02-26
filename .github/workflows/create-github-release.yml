@@ -1,4 +1,4 @@
-name: Create GitHub Release
+name: create-github-release
 
 on:
   push:

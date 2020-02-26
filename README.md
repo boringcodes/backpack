@@ -26,9 +26,9 @@
 
 ### Added features
 
-- Typescript by default instead of Babel
-- Linting with tslint, tslint-config-airbnb, tslint-immutable & tslint-sonarts
-- Dotenv with dotenv-webpack
+- [x] typescript
+- [x] tslint, tslint-config-airbnb, tslint-immutable & tslint-sonarts
+- [x] dotenv
 
 ## How to use
 

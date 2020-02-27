@@ -1,13 +1,13 @@
 ![backpack](https://cloud.githubusercontent.com/assets/4060187/21872211/318795e8-d835-11e6-8376-bea370605361.png)
 
 <div align="center">
-  <a href="https://github.com/boringcodes/backpack" aria-label="Commitizen Friendly">
+  <a href="https://github.com/boringcodes/backpack/commits" aria-label="Commitizen Friendly">
     <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
   </a>
-  <a href="https://github.com/boringcodes/backpack" aria-label="GitHub Workflow Status">
+  <a href="https://github.com/boringcodes/backpack/actions" aria-label="GitHub Workflow Status">
     <img src="https://img.shields.io/github/workflow/status/boringcodes/backpack/publish-npm?style=flat-square">
   </a>
-  <a href="https://github.com/boringcodes/backpack" aria-label="Dependencies Status">
+  <a href="https://david-dm.org/boringcodes/backpack" aria-label="Dependencies Status">
     <img src="https://img.shields.io/david/boringcodes/backpack?style=flat-square">
   </a>
   <a href="https://www.npmjs.com/package/@boringcodes/backpack" aria-label="NPM Version">
@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/github/license/boringcodes/backpack?color=brightgreen&style=flat-square">
   </a>
   <a href="https://github.com/boringcodes">
-    <img src="https://img.shields.io/badge/github-@boringcodes-brightgreen?style=flat-square">
+    <img src="https://img.shields.io/badge/boringcodes-verified-brightgreen?style=flat-square">
   </a>
 </div>
 

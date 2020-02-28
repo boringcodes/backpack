@@ -1,6 +1,6 @@
 {
   "name": "@boringcodes/backpack",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Backpack with Some Boring Features",
   "homepage": "https://github.com/boringcodes/backpack",
   "bugs": "https://github.com/boringcodes/backpack/issues",
@@ -27,7 +27,6 @@
     "source-map-support": "^0.5.12",
     "webpack": "^4.35.0",
     "webpack-node-externals": "^1.7.2",
-    "dotenv-webpack": "^1.7.0",
     "ts-loader": "^6.2.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "tslint": "^6.0.0",

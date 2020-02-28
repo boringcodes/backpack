@@ -30,7 +30,7 @@
 - [x] tslint, tslint-config-airbnb, tslint-immutable & tslint-sonarts
 - [x] dotenv
 
-## How to use
+## Installation
 
 Either through cloning with git or by using [yarn](https://yarnpkg.com/) (the recommended way):
 
@@ -117,3 +117,17 @@ Then run the build command and start your app
 yarn run build
 node ./build/index.js
 ```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Authors
+
+[BoringCodes](https://github.com/boringcodes)
+
+## License
+
+[MIT](https://github.com/boringcodes/backpack/blob/master/LICENSE)

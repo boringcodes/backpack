@@ -18,23 +18,23 @@
     "release:patch": "yarn release --release-as patch"
   },
   "dependencies": {
-    "cross-spawn": "^6.0.5",
+    "cross-spawn": "^7.0.1",
+    "dotenv-webpack": "^1.7.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "json-loader": "^0.5.7",
-    "nodemon": "^1.19.1",
-    "ramda": "^0.26.1",
+    "nodemon": "^2.0.2",
+    "ramda": "^0.27.0",
     "source-map-support": "^0.5.12",
-    "webpack": "^4.35.0",
-    "webpack-node-externals": "^1.7.2",
-    "dotenv-webpack": "^1.7.0",
     "standard-version": "^7.1.0",
     "ts-loader": "^6.2.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "tslint": "^5.11.0",
+    "tslint": "^6.0.0",
     "tslint-config-airbnb": "^5.11.1",
-    "tslint-immutable": "^5.0.0",
+    "tslint-immutable": "^6.0.1",
     "tslint-sonarts": "^1.8.0",
     "tslint-webpack-plugin": "^2.1.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "webpack": "^4.35.0",
+    "webpack-node-externals": "^1.7.2"
   }
 }

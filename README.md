@@ -27,7 +27,7 @@
 ### Added features
 
 - [x] typescript
-- [x] tslint, tslint-config-airbnb, tslint-immutable & tslint-sonarts
+- [x] eslint, eslint-config-airbnb-base, eslint-plugin-immutable, eslint-plugin-sonarjs
 - [x] dotenv
 
 ## Installation

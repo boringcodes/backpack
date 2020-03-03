@@ -4,7 +4,6 @@ const nodeExternals = require('webpack-node-externals');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-const TSLintPlugin = require('tslint-webpack-plugin');
 
 const config = require('./paths');
 
@@ -85,7 +84,22 @@ module.exports = options => {
           options: {
             configFile: path.resolve(__dirname, '../config/tsconfig.json')
           }
-        }
+        },
+        {
+          test: /\.(ts)$/,
+          enforce: 'pre',
+          use: [
+            {
+              options: {
+                eslintPath: require.resolve('eslint'),
+                configFile: path.resolve(__dirname, '../config/.eslintrc.js'),
+                fix: true,
+              },
+              loader: require.resolve('eslint-loader'),
+            },
+          ],
+          exclude: [/node_modules/, /build/],
+        },
       ],
     },
     // A few commonly used plugins have been removed from Webpack v4.
@@ -139,10 +153,6 @@ module.exports = options => {
         clearConsole: options.env === 'development',
       }),
       new Dotenv(),
-      new TSLintPlugin({
-        files: [path.resolve(config.serverSrcPath, './**/*.ts')],
-        config: path.resolve(__dirname, '../config/tslint.json'),
-      })
     ],
   };
 };

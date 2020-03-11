@@ -4,7 +4,6 @@ const nodeExternals = require('webpack-node-externals');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-const TSLintPlugin = require('tslint-webpack-plugin');
 
 const config = require('./paths');
 
@@ -12,7 +11,7 @@ const config = require('./paths');
 // It is focused on developer experience and fast rebuilds.
 module.exports = options => {
   return {
-    
+
     // Webpack v4 add a mode configuration option tells webpack to use its
     // built-in optimizations accordingly.
     // @see https://webpack.js.org/concepts/mode/
@@ -139,10 +138,6 @@ module.exports = options => {
         clearConsole: options.env === 'development',
       }),
       new Dotenv(),
-      new TSLintPlugin({
-        files: [path.resolve(config.serverSrcPath, './**/*.ts')],
-        config: path.resolve(__dirname, '../config/tslint.json'),
-      })
     ],
   };
 };

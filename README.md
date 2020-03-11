@@ -26,9 +26,8 @@
 
 ### Added features
 
-- [x] typescript
-- [x] tslint, tslint-config-airbnb, tslint-immutable & tslint-sonarts
-- [x] dotenv
+- [x] typescript ([ts-loader](https://github.com/TypeStrong/ts-loader))
+- [x] dotenv ([dotenv-webpack](https://github.com/mrsteele/dotenv-webpack))
 
 ## Installation
 

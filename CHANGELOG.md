@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/boringcodes/backpack/compare/v1.1.0...v1.2.0) (2020-03-12)
+
+
+### Features
+
+* **closes #13:** remove tslint ([#14](https://github.com/boringcodes/backpack/issues/14)) ([d1acde0](https://github.com/boringcodes/backpack/commit/d1acde092ba7316dd6b8ec453b08e12ebce7e0b7)), closes [#13](https://github.com/boringcodes/backpack/issues/13)
+
 ## [1.1.0](https://github.com/boringcodes/backpack/compare/v1.0.3...v1.1.0) (2020-02-28)
 
 

@@ -11,7 +11,6 @@ const config = require('./paths');
 // It is focused on developer experience and fast rebuilds.
 module.exports = options => {
   return {
-
     // Webpack v4 add a mode configuration option tells webpack to use its
     // built-in optimizations accordingly.
     // @see https://webpack.js.org/concepts/mode/
@@ -20,7 +19,7 @@ module.exports = options => {
     // `browser`, and even `electron`. Since Backpack is focused on Node,
     // we set the default target accordingly.
     target: 'node',
-    devtool: options.env !== 'development' ?  undefined : 'source-map',
+    devtool: options.env !== 'development' ? undefined : 'source-map',
     // Webpack allows you to define externals - modules that should not be
     // bundled. When bundling with Webpack for the backend - you usually
     // don't want to bundle its node_modules dependencies. This creates an externals
@@ -35,7 +34,7 @@ module.exports = options => {
           /\.(mp4|mp3|ogg|swf|webp)$/,
           /\.(css|scss|sass|less|styl)$/,
         ],
-      })
+      }),
     ],
     // As of Webpack 2 beta, Webpack provides performance hints.
     // Since we are not targeting a browser, bundle size is not relevant.
@@ -48,14 +47,22 @@ module.exports = options => {
     resolve: {
       extensions: ['.ts', '.js', '.json'],
       // modules: [path.resolve(__dirname, '../node_modules')],
-      modules: [config.userNodeModulesPath, path.resolve(__dirname, '../node_modules')],
-      plugins: [new TsconfigPathsPlugin({
-        configFile: path.resolve(__dirname, '../config/tsconfig.json')
-      })]
+      modules: [
+        config.userNodeModulesPath,
+        path.resolve(__dirname, '../node_modules'),
+      ],
+      plugins: [
+        new TsconfigPathsPlugin({
+          configFile: path.resolve(__dirname, '../config/tsconfig.json'),
+        }),
+      ],
     },
     resolveLoader: {
       // modules: [path.resolve(__dirname, '../node_modules')],
-      modules: [config.userNodeModulesPath, path.resolve(__dirname, '../node_modules')],
+      modules: [
+        config.userNodeModulesPath,
+        path.resolve(__dirname, '../node_modules'),
+      ],
     },
     node: {
       __filename: true,
@@ -82,9 +89,9 @@ module.exports = options => {
           test: /\.ts$/,
           loader: 'ts-loader',
           options: {
-            configFile: path.resolve(__dirname, '../config/tsconfig.json')
-          }
-        }
+            configFile: path.resolve(__dirname, '../config/tsconfig.json'),
+          },
+        },
       ],
     },
     // A few commonly used plugins have been removed from Webpack v4.
@@ -96,48 +103,53 @@ module.exports = options => {
       // from printing out compile time stats to the console.
       noEmitOnErrors: true,
     },
-    plugins: options.env !== 'development' ? [
-      new webpack.BannerPlugin({
-        raw: true,
-        entryOnly: false,
-        banner: `require('${
-          // Is source-map-support installed as project dependency, or linked?
-          require.resolve('source-map-support').indexOf(process.cwd()) === 0
-            ? // If it's resolvable from the project root, it's a project dependency.
-            'source-map-support/register'
-            : // It's not under the project, it's linked via lerna.
-              require.resolve('source-map-support/register')
-        }');`,
-      }),
-    ] : [
-      // We define some sensible Webpack flags. One for the Node environment,
-      // and one for dev / production. These become global variables. Note if
-      // you use something like eslint or standard in your editor, you will
-      // want to configure __DEV__ as a global variable accordingly.
-      new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(options.env),
-        __DEV__: options.env === 'development',
-      }),
-      // In order to provide sourcemaps, we automagically insert this at the
-      // top of each file using the BannerPlugin.
-      new webpack.BannerPlugin({
-        raw: true,
-        entryOnly: false,
-        banner: `require('${
-          // Is source-map-support installed as project dependency, or linked?
-          require.resolve('source-map-support').indexOf(process.cwd()) === 0
-            ? // If it's resolvable from the project root, it's a project dependency.
-            'source-map-support/register'
-            : // It's not under the project, it's linked via lerna.
-              require.resolve('source-map-support/register')
-        }');`,
-      }),
-      // The FriendlyErrorsWebpackPlugin (when combined with source-maps)
-      // gives Backpack its human-readable error messages.
-      new FriendlyErrorsWebpackPlugin({
-        clearConsole: options.env === 'development',
-      }),
-      new Dotenv(),
-    ],
+    plugins:
+      options.env !== 'development'
+        ? [
+            new webpack.BannerPlugin({
+              raw: true,
+              entryOnly: false,
+              banner: `require('${
+                // Is source-map-support installed as project dependency, or linked?
+                require.resolve('source-map-support').indexOf(process.cwd()) ===
+                0
+                  ? // If it's resolvable from the project root, it's a project dependency.
+                    'source-map-support/register'
+                  : // It's not under the project, it's linked via lerna.
+                    require.resolve('source-map-support/register')
+              }');`,
+            }),
+          ]
+        : [
+            // We define some sensible Webpack flags. One for the Node environment,
+            // and one for dev / production. These become global variables. Note if
+            // you use something like eslint or standard in your editor, you will
+            // want to configure __DEV__ as a global variable accordingly.
+            new webpack.DefinePlugin({
+              'process.env.NODE_ENV': JSON.stringify(options.env),
+              __DEV__: options.env === 'development',
+            }),
+            // In order to provide sourcemaps, we automagically insert this at the
+            // top of each file using the BannerPlugin.
+            new webpack.BannerPlugin({
+              raw: true,
+              entryOnly: false,
+              banner: `require('${
+                // Is source-map-support installed as project dependency, or linked?
+                require.resolve('source-map-support').indexOf(process.cwd()) ===
+                0
+                  ? // If it's resolvable from the project root, it's a project dependency.
+                    'source-map-support/register'
+                  : // It's not under the project, it's linked via lerna.
+                    require.resolve('source-map-support/register')
+              }');`,
+            }),
+            // The FriendlyErrorsWebpackPlugin (when combined with source-maps)
+            // gives Backpack its human-readable error messages.
+            new FriendlyErrorsWebpackPlugin({
+              clearConsole: options.env === 'development',
+            }),
+            new Dotenv(),
+          ],
   };
 };

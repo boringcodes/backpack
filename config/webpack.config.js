@@ -9,7 +9,7 @@ const config = require('./paths');
 
 // This is the Webpack configuration.
 // It is focused on developer experience and fast rebuilds.
-module.exports = options => {
+module.exports = (options) => {
   return {
     // Webpack v4 add a mode configuration option tells webpack to use its
     // built-in optimizations accordingly.

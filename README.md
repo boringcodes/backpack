@@ -57,7 +57,7 @@ and add a script to your package.json like this:
 
 After that there are just a few ~~conventions~~ defaults:
 
-* `src/index.ts`: the entry of your app.
+- `src/index.ts`: the entry of your app.
 
 ...actually that's it.
 

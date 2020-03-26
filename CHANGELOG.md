@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/boringcodes/backpack/compare/v1.2.1...v1.3.0) (2020-03-26)
+
+
+### Features
+
+* **package:** add prettier & husky ([9f0907b](https://github.com/boringcodes/backpack/commit/9f0907b53922e9e58ec01e92c145c9cf924d8732))
+
 ### [1.2.1](https://github.com/boringcodes/backpack/compare/v1.2.0...v1.2.1) (2020-03-21)
 
 ## [1.2.0](https://github.com/boringcodes/backpack/compare/v1.1.0...v1.2.0) (2020-03-12)

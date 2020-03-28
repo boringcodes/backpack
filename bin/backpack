@@ -37,8 +37,8 @@ const bin = path.resolve(path.join(__dirname, cmd));
 
 const startProcess = () => {
   const proc = spawn(bin, args, { stdio: 'inherit' });
-  proc.on('close', code => process.exit(code));
-  proc.on('error', err => {
+  proc.on('close', (code) => process.exit(code));
+  proc.on('error', (err) => {
     console.error(err);
     process.exit(1);
   });

@@ -31,14 +31,14 @@
     regenerator-runtime "^0.13.4"
 
 "@boringcodes/eslint-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@boringcodes/eslint-config/-/eslint-config-1.0.0.tgz#1c2366b00c92a25bf6bc2ddcfd8b06cf9aee8652"
-  integrity sha512-q4HNHiwnYNAXihskDCOMIv3xasefGNi10ax11iXJlC8e4Gg1TResJ+WdDpfZJ7+mHRaYKFDgKXI6ia/IfF7tLw==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@boringcodes/eslint-config/-/eslint-config-1.1.1.tgz#fc7cea4554ae996e0dd1f2f7aa47da3484794548"
+  integrity sha512-l4KlHbK1IhlI2Loc3+gzcY4FReT4LiP5M66KphCWwqiGdaV4NUuipqgAznVNiV7HRdGyPgMGe6wALFee8mFySA==
 
 "@boringcodes/prettier-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@boringcodes/prettier-config/-/prettier-config-1.0.0.tgz#94ebeda4fec2d155ad957a0e47d3ed492400b91b"
-  integrity sha512-P9Ymg/8x1PiIAIysHXZ5fOV0J+H5RxGhcAKNjrn8uyncPratIfzbJ0rKTYlgpjuMcGbFM7U+E4tdCVnOnYk/SA==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@boringcodes/prettier-config/-/prettier-config-1.2.2.tgz#47336d595011930cd5aacc235e1ee5e12840fc7d"
+  integrity sha512-JaOIasT4tPGV6plBTfth1Ps1tQ54orlfTeF/TmX8EUJ2+vM9aRgnvdiTLk226y763c/zjswseUUyM2DSaqd9cw==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"

@@ -28,7 +28,7 @@ module.exports = (options) => {
     externals: [
       nodeExternals({
         modulesFromFile: true,
-        whitelist: [
+        allowlist: [
           /\.(eot|woff|woff2|ttf|otf)$/,
           /\.(svg|png|jpg|jpeg|gif|ico|webm)$/,
           /\.(mp4|mp3|ogg|swf|webp)$/,
@@ -101,7 +101,7 @@ module.exports = (options) => {
       // optimization.noEmitOnErrors prevents Webpack
       // The NoEmitOnErrorsPlugin plugin prevents Webpack
       // from printing out compile time stats to the console.
-      noEmitOnErrors: true,
+      emitOnErrors: false,
     },
     plugins:
       options.env !== 'development'

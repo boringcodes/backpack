@@ -149,7 +149,7 @@ module.exports = (options) => {
             new FriendlyErrorsWebpackPlugin({
               clearConsole: options.env === 'development',
             }),
-            new Dotenv(),
+            new Dotenv({ systemvars: true }),
           ],
   };
 };

@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.5.0](https://github.com/boringcodes/backpack/compare/v1.4.0...v1.5.0) (2021-01-18)
 
-
 ### Features
 
-* **dotenv:** add { systemvars: true } to dotenv opts to allow system env vars to be understood ([82356dc](https://github.com/boringcodes/backpack/commit/82356dc5714f074b0c68579ee2d24247da2cdbb7))
+- **dotenv:** add { systemvars: true } to dotenv opts to allow system env vars to be understood ([82356dc](https://github.com/boringcodes/backpack/commit/82356dc5714f074b0c68579ee2d24247da2cdbb7))
 
 ## [1.4.0](https://github.com/boringcodes/backpack/compare/v1.3.1...v1.4.0) (2021-01-11)
 

@@ -27,7 +27,7 @@ process.on('SIGINT', process.exit);
 const serverCompiler = webpack(serverConfig);
 
 const startServer = () => {
-  const serverPaths = Object.keys(serverCompiler.options.entry).map(entry =>
+  const serverPaths = Object.keys(serverCompiler.options.entry).map((entry) =>
     path.join(serverCompiler.options.output.path, `${entry}.js`),
   );
 

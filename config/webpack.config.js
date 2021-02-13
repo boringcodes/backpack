@@ -1,15 +1,21 @@
-const webpack = require('webpack');
+const fs = require('fs');
 const path = require('path');
+const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const config = require('./paths');
 
 // This is the Webpack configuration.
 // It is focused on developer experience and fast rebuilds.
 module.exports = (options) => {
+  let tsconfigPath = path.resolve('tsconfig.json');
+  if (!fs.existsSync(tsconfigPath)) {
+    tsconfigPath = path.resolve(__dirname, './tsconfig.json');
+  }
+
   return {
     // Webpack v4 add a mode configuration option tells webpack to use its
     // built-in optimizations accordingly.
@@ -45,7 +51,7 @@ module.exports = (options) => {
     // Since we are wrapping our own webpack config, we need to properly resolve
     // Backpack's and the given user's node_modules without conflict.
     resolve: {
-      extensions: ['.ts', '.js', '.json'],
+      extensions: ['.ts', '.json'],
       // modules: [path.resolve(__dirname, '../node_modules')],
       modules: [
         config.userNodeModulesPath,
@@ -53,7 +59,7 @@ module.exports = (options) => {
       ],
       plugins: [
         new TsconfigPathsPlugin({
-          configFile: path.resolve(__dirname, '../config/tsconfig.json'),
+          configFile: tsconfigPath,
         }),
       ],
     },
@@ -88,9 +94,6 @@ module.exports = (options) => {
         {
           test: /\.ts$/,
           loader: 'ts-loader',
-          options: {
-            configFile: path.resolve(__dirname, '../config/tsconfig.json'),
-          },
         },
       ],
     },

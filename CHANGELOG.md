@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/boringcodes/backpack/compare/v1.5.1...v1.5.2) (2021-02-13)
+
+### Bug Fixes
+
+- **build:** remove build in .gitignore to fix publish package missing bin/buid file ([381c340](https://github.com/boringcodes/backpack/commit/381c3405fa5a44a53b927d470c50df93310f8855))
+
 ### [1.5.1](https://github.com/boringcodes/backpack/compare/v1.5.0...v1.5.1) (2021-02-13)
 
 ### Bug Fixes

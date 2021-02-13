@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/boringcodes/backpack/compare/v1.5.0...v1.5.1) (2021-02-13)
+
+### Bug Fixes
+
+- **config:** update tsconfig-paths-webpack-plugin to use CWD's tsconfig.json if exists, refactor the default one ([7322980](https://github.com/boringcodes/backpack/commit/732298018a8876c322a64b988d22967c91d94b8f))
+
 ## [1.5.0](https://github.com/boringcodes/backpack/compare/v1.4.0...v1.5.0) (2021-01-18)
 
 ### Features

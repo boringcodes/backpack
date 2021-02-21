@@ -27,10 +27,12 @@
   </a>
 </div>
 
-### Added features
+### Features
 
-- [x] typescript ([ts-loader](https://github.com/TypeStrong/ts-loader))
-- [x] dotenv ([dotenv-webpack](https://github.com/mrsteele/dotenv-webpack))
+Backpack with the following added features:
+
+- [x] TypeScript using ([ts-loader](https://github.com/TypeStrong/ts-loader))
+- [x] DotENV using ([dotenv-webpack](https://github.com/mrsteele/dotenv-webpack))
 
 ## Installation
 
@@ -48,12 +50,13 @@ You can also install backpack as a repository dependency:
 yarn add @boringcodes/backpack
 ```
 
-and add a script to your package.json like this:
+and add the following scripts to your package.json like this:
 
 ```json
 {
   "scripts": {
-    "dev": "backpack"
+    "dev": "backpack dev",
+    "build": "backpack build"
   }
 }
 ```
@@ -68,6 +71,12 @@ You can then run your application in development mode:
 
 ```bash
 yarn run dev
+```
+
+Or build source by the following command:
+
+```bash
+yarn run build
 ```
 
 ### Custom configuration

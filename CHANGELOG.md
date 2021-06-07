@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.4](https://github.com/boringcodes/backpack/compare/v1.5.3...v1.5.4) (2021-06-07)
+
+### Bug Fixes
+
+- **engines/node:** drop support of node 10 as ts-loader@9.2.3 requires >=12.0.0 ([aab24ec](https://github.com/boringcodes/backpack/commit/aab24ec8831d91667bef50649b003b4d7889f4e1))
+
 ### [1.5.3](https://github.com/boringcodes/backpack/compare/v1.5.2...v1.5.3) (2021-06-07)
 
 ### [1.5.2](https://github.com/boringcodes/backpack/compare/v1.5.1...v1.5.2) (2021-02-13)

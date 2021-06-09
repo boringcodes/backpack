@@ -93,7 +93,9 @@ module.exports = (options) => {
       rules: [
         {
           test: /\.ts$/,
-          loader: 'ts-loader',
+          // loader: 'ts-loader',
+          // require.resolve('ts-loader') fix yarn workspaces monorepo
+          loader: require.resolve('ts-loader'),
         },
       ],
     },

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/boringcodes/backpack/compare/v1.5.4...v1.5.5) (2021-06-09)
+
+### Bug Fixes
+
+- **webpack:** require.resolve('ts-loader') to fix yarn workspaces problem ([7e6d407](https://github.com/boringcodes/backpack/commit/7e6d407084eaac9000551258bab335007d1c6d25))
+
 ### [1.5.4](https://github.com/boringcodes/backpack/compare/v1.5.3...v1.5.4) (2021-06-07)
 
 ### Bug Fixes
